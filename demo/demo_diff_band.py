@@ -12,7 +12,7 @@ from BandSelection.classes.ISSC import ISSC_HSI
 from BandSelection.classes.SpaBS import SpaBS
 
 if __name__ == '__main__':
-    root = 'F:\Python\HSI_Files\\'
+    root = '/content/'
     #'/Users/cengmeng/PycharmProjects/python/Deep-subspace-clustering-networks/Data/'
     # im_, gt_ = 'SalinasA_corrected', 'SalinasA_gt'
     im_, gt_ = 'Indian_pines_corrected', 'Indian_pines_gt'
