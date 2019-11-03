@@ -1,9 +1,9 @@
 # coding:utf-8
-from BandSelection.classes.utility import eval_band_cv
+from classes.utility import eval_band_cv
 from Toolbox.Preprocessing import Processor
 from sklearn.preprocessing import minmax_scale
 from sklearn.metrics import accuracy_score
-from BandSelection.classes.SNMF import BandSelection_SNMF
+from classes.SNMF import BandSelection_SNMF
 import numpy as np
 
 if __name__ == '__main__':
