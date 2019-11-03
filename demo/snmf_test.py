@@ -8,7 +8,7 @@ import numpy as np
 
 if __name__ == '__main__':
     # root = '/Users/cengmeng/PycharmProjects/python/Deep-subspace-clustering-networks/Data/'
-    root = 'F:\Python\HSI_Files\\'
+    root = '/content/'
     # im_, gt_ = 'SalinasA_corrected', 'SalinasA_gt'
     im_, gt_ = 'Indian_pines_corrected', 'Indian_pines_gt'
     # im_, gt_ = 'Pavia', 'Pavia_gt'
