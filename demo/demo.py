@@ -1,4 +1,4 @@
-from BandSelection.classes.SpaBS import SpaBS
+from classes.SpaBS import SpaBS
 from Toolbox.Preprocessing import Processor
 from sklearn.preprocessing import minmax_scale
 from BandSelection.classes.DSC_NET import DSC_NET
