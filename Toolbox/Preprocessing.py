@@ -44,7 +44,7 @@ class Processor:
         return img_correct, gt_correct
 
     def get_tr_tx_index(self, y, test_size=0.9):
-        from sklearn.cross_validation import train_test_split
+        from sklearn.model_selection import train_test_split
         X_train_index, X_test_index, y_train_, y_test_ = \
             train_test_split(np.arange(0, y.shape[0]), y, test_size=test_size)
         return X_train_index, X_test_index
