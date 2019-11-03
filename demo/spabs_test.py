@@ -3,9 +3,9 @@
 from Toolbox.Preprocessing import Processor
 from sklearn.preprocessing import minmax_scale
 from sklearn.metrics import accuracy_score
-from BandSelection.classes.SpaBS import SpaBS
+from classes.SpaBS import SpaBS
 import numpy as np
-from BandSelection.classes.utility import eval_band
+from classes.utility import eval_band
 
 
 if __name__ == '__main__':
