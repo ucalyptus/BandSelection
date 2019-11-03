@@ -1,8 +1,8 @@
 from Toolbox.Preprocessing import Processor
 from sklearn.preprocessing import minmax_scale
-from classes.DSC_NET import DSC_NET
+#from classes.DSC_NET import DSC_NET
 import numpy as np
-from classes.DSC_NET import DSCBS
+#from classes.DSC_NET import DSCBS
 from classes.SPEC import SPEC_HSI
 from classes.utility import eval_band, eval_band_cv
 from classes.SNMF import BandSelection_SNMF
@@ -59,7 +59,7 @@ if __name__ == '__main__':
               'logs_path': logs_path}
 
     # algorithm = [DSCBS(n_selected_band, **kwargs)]
-    alg_key = ['SPEC', 'Lap_score', 'NDFS', 'SpaBS', 'ISSC', 'SNMF', 'DSC']
+    alg_key = ['SPEC', 'Lap_score', 'NDFS', 'SpaBS', 'ISSC', 'SNMF'] #,'DSC']
     num_band = np.arange(5, 55, 5)
     knn_res, svm_res, elm_res = [], [], []
     for n_selected_band in num_band:
@@ -68,8 +68,9 @@ if __name__ == '__main__':
                      #NDFS_HSI(np.unique(gt_correct).shape[0], n_selected_band),
                      SpaBS(n_selected_band),
                      ISSC_HSI(n_selected_band, coef_=1.e-4),  #
-                     BandSelection_SNMF(n_selected_band),
-                     DSCBS(n_selected_band, **kwargs)]
+                     BandSelection_SNMF(n_selected_band)]
+                     
+                     #,DSCBS(n_selected_band, **kwargs)]
         knn_score, svm_score, elm_score = [], [], []
         for i in range(algorithm.__len__()):
             if i <= 4:
