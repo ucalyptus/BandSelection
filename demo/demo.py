@@ -1,16 +1,16 @@
 from classes.SpaBS import SpaBS
 from Toolbox.Preprocessing import Processor
 from sklearn.preprocessing import minmax_scale
-from BandSelection.classes.DSC_NET import DSC_NET
+from classes.DSC_NET import DSC_NET
 import numpy as np
-from BandSelection.classes.DSC_NET import DSCBS
-from BandSelection.classes.SPEC import SPEC_HSI
-from BandSelection.classes.utility import eval_band, eval_band_cv
-from BandSelection.classes.SNMF import BandSelection_SNMF
-from BandSelection.classes.Lap_score import Lap_score_HSI
-from BandSelection.classes.NDFS import NDFS_HSI
-from BandSelection.classes.ISSC import ISSC_HSI
-from BandSelection.classes.CAE_SSC import CAE_BS
+from classes.DSC_NET import DSCBS
+from classes.SPEC import SPEC_HSI
+from classes.utility import eval_band, eval_band_cv
+from classes.SNMF import BandSelection_SNMF
+from classes.Lap_score import Lap_score_HSI
+from classes.NDFS import NDFS_HSI
+from classes.ISSC import ISSC_HSI
+from classes.CAE_SSC import CAE_BS
 
 if __name__ == '__main__':
     root = '/content/'
