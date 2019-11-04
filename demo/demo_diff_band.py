@@ -66,9 +66,9 @@ if __name__ == '__main__':
         algorithm = [SPEC_HSI(n_selected_band),
                      Lap_score_HSI(n_selected_band),
                      #NDFS_HSI(np.unique(gt_correct).shape[0], n_selected_band),
-                     SpaBS(n_selected_band),
-                     ISSC_HSI(n_selected_band, coef_=1.e-4),  #
-                     BandSelection_SNMF(n_selected_band)]
+                     #SpaBS(n_selected_band),
+                     ISSC_HSI(n_selected_band, coef_=1.e-4)]#,  #
+                     #BandSelection_SNMF(n_selected_band)]
                      
                      #,DSCBS(n_selected_band, **kwargs)]
         knn_score, svm_score, elm_score = [], [], []
