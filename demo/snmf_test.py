@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     img_path = root + im_ + '.mat'
     gt_path = root + gt_ + '.mat'
-    print(img_path)
+
 
     p = Processor()
     img, gt = p.prepare_data(img_path, gt_path)
